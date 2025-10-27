@@ -1,53 +1,50 @@
----
-layout: home
-title: Документация проекта
-description: Единый источник правды по фронтенду, бэкенду и DevOps
-hero:
-  name: Проектная документация
-  text: Стандарты, гайдлайны и практики 2025
-  tagline: Vue 3 (Composition API) · TypeScript · Express · Laravel · SQL · Docker
-  actions:
-    - theme: brand
-      text: Быстрый старт
-      link: /getting-started
-    - theme: alt
-      text: Архитектура
-      link: /architecture
-features:
-  - icon: ⚙️
-    title: Стек 2025
-    details: Vue 3 + TypeScript, Vite, Pinia, Vitest, Playwright, Docker, CI/CD
-  - icon: 🧩
-    title: Чистый код
-    details: SOLID, модульность, явные контракты, предсказуемые абстракции
-  - icon: 📦
-    title: Сборка
-    details: Vite, код-сплиттинг, динамический импорт, минимальный бандл
-  - icon: 🧪
-    title: Тестирование
-    details: Unit, компонентные и e2e тесты, покрытие как метрика качества
-  - icon: 🔐
-    title: Безопасность
-    details: .env, секреты вне репозитория, валидация ввода, политика зависимостей
-  - icon: 🚀
-    title: Доставка
-    details: CI/CD, линтеры на PR, автоверсионирование и ченджлог
----
+# Подготовка по направлениям Frontend-разработки
 
-## Быстрый обзор
+## [JavaScript](./js/)
+- [Синтаксис и типы данных](./js/index.md)
+- [Асинхронное программирование](./js/async.md)
+- [Продвинутая работа с объектами](./js/index.md#объекты)
+- [ООП в JavaScript](./js/oop.md)
+- [Функциональное программирование](./js/functional.md)
+- [Браузерное API](./js/index.md#браузерное-api)
+- [Внутреннее устройство JS](./js/index.md#engine)
 
-- Цель: единообразная разработка и поставка функций без деградаций производительности и качества.
-- Основание: требования к стеку и практика 2025 года, акцент на предсказуемость и воспроизводимость среды.
+## [TypeScript](./ts/)
+- [Типизация и ключевые принципы](./ts/index.md)
+- [Объединение и пересечение типов](./ts/types.md)
+- [Интерфейсы и дженерики](./ts/types.md#generics)
 
-## TL;DR
-1. Установи зависимости.
-2. Запусти dev-сервер.
-3. Запусти тесты и линтеры.
-4. Собери артефакт.
+## [HTML / CSS / PCSS](./html-css/)
+- [Позиционирование и наложение элементов](./html-css/index.md#positioning)
+- [Flexbox и Grid](./html-css/flexbox.md)
+- [БЭМ](./html-css/bem.md)
+- [Анимации](./html-css/animation.md)
+- [Семантика и адаптивность](./html-css/index.md#semantic)
 
-### Windows / PowerShell
-```powershell
-corepack enable
-corepack prepare pnpm@latest --activate
-pnpm install
-pnpm run dev
+## [Vue.js](./vue/)
+- [Composition API](./vue/composition.md)
+- [Render-функции](./vue/render.md)
+- [Store](./vue/store.md)
+- [Router](./vue/router.md)
+- [i18n (локализация)](./vue/index.md#i18n)
+
+## [Системный дизайн](./system-design/)
+- [Протоколы обмена данными](./system-design/protocols.md)
+- [Паттерны проектирования](./system-design/patterns.md)
+- [Принципы KISS, DRY, SOLID](./system-design/index.md#principles)
+
+## [Инфраструктура и безопасность](./infra-security/)
+- [GitLab и CI/CD](./infra-security/index.md#gitlab)
+- [Сборка: Webpack и Vite](./infra-security/index.md#build)
+- [Аутентификация / авторизация](./infra-security/auth.md)
+- [Безопасность клиента](./infra-security/index.md#security)
+
+## [Анализ и проектирование](./analysis/)
+- [Анализ постановки задачи](./analysis/index.md)
+- [Декомпозиция задач](./analysis/decomposition.md)
+- [Проектирование решений](./analysis/index.md#design)
+
+## [Организация и управление](./management/)
+- [Организация работ](./management/index.md)
+- [Развитие команды](./management/team.md)
+- [Интервью и подбор](./management/index.md#interview)
