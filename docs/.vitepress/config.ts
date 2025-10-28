@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
     lang: 'ru-RU',
-    title: 'PF-FORUM Docs',
+    title: 'Frontend Core',
     description: 'Документация',
     cleanUrls: true,
 
