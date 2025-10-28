@@ -1,6 +1,6 @@
 ---
 title: Асинхронное программирование в JavaScript
-description: Практики 2025: event loop, microtask-и, async/await, отмена, тайм-ауты, пул конкуренции, стримы, Web Workers
+description: Практики 2025 event loop, microtask-и, async/await, отмена, тайм-ауты, пул конкуренции, стримы, Web Workers
 outline: deep
 ---
 
