@@ -34,9 +34,9 @@ export default defineConfig({
                 items: [
                     {
                         text: 'JavaScript',
-                        link: '/javascript/index',
+                        link: '/javascript/',
                         items: [
-                            { text: 'Синтаксис и типы данных', link: '/javascript/index#синтаксис-и-типы-данных' },
+                            { text: 'Синтаксис и типы данных', link: '/javascript/#синтаксис-и-типы-данных' },
                             { text: 'Асинхронное программирование', link: '/javascript/async' },
                             { text: 'ООП в JavaScript', link: '/javascript/oop' },
                             { text: 'Функциональное программирование', link: '/javascript/functional' }
@@ -44,70 +44,70 @@ export default defineConfig({
                     },
                     {
                         text: 'TypeScript',
-                        link: '/typescript/index',
+                        link: '/typescript/',
                         items: [
-                            { text: 'Типизация и ключевые принципы', link: '/typescript/index' },
+                            { text: 'Типизация и ключевые принципы', link: '/typescript/' },
                             { text: 'Объединение и пересечение типов', link: '/typescript/types' },
-                            { text: 'Интерфейсы и дженерики', link: '/typescript/types#generics' }
+                            { text: 'Интерфейсы и дженерики', link: '/typescript/generics' }
                         ]
                     },
                     {
                         text: 'HTML / CSS / PCSS',
-                        link: '/html-css/index',
+                        link: '/html-css/',
                         items: [
-                            { text: 'Позиционирование и наложение', link: '/html-css/index#positioning' },
+                            { text: 'Позиционирование и наложение', link: '/html-css/#positioning' },
                             { text: 'Flexbox и Grid', link: '/html-css/flexbox' },
                             { text: 'БЭМ', link: '/html-css/bem' },
                             { text: 'Анимации', link: '/html-css/animation' },
-                            { text: 'Семантика и адаптивность', link: '/html-css/index#semantic' }
+                            { text: 'Семантика и адаптивность', link: '/html-css/#semantic' }
                         ]
                     },
                     {
                         text: 'Vue 3',
-                        link: '/vue/index',
+                        link: '/vue/',
                         items: [
                             { text: 'Composition API', link: '/vue/composition' },
                             { text: 'Render-функции', link: '/vue/render' },
                             { text: 'Store', link: '/vue/store' },
                             { text: 'Router', link: '/vue/router' },
-                            { text: 'i18n (локализация)', link: '/vue/index#i18n' }
+                            { text: 'i18n (локализация)', link: '/vue/#i18n' }
                         ]
                     },
                     {
                         text: 'Системный дизайн',
-                        link: '/system-design/index',
+                        link: '/system-design/',
                         items: [
                             { text: 'Протоколы обмена данными', link: '/system-design/protocols' },
                             { text: 'Паттерны проектирования', link: '/system-design/patterns' },
-                            { text: 'Принципы KISS, DRY, SOLID', link: '/system-design/index#principles' }
+                            { text: 'Принципы KISS, DRY, SOLID', link: '/system-design/#principles' }
                         ]
                     },
                     {
                         text: 'Инфраструктура и безопасность',
-                        link: '/infra-security/index',
+                        link: '/infra-security/',
                         items: [
-                            { text: 'GitLab и CI/CD', link: '/infra-security/index#gitlab' },
-                            { text: 'Сборка: Webpack и Vite', link: '/infra-security/index#build' },
+                            { text: 'GitLab и CI/CD', link: '/infra-security/#gitlab' },
+                            { text: 'Сборка: Webpack и Vite', link: '/infra-security/#build' },
                             { text: 'Аутентификация / авторизация', link: '/infra-security/auth' },
-                            { text: 'Безопасность клиента', link: '/infra-security/index#security' }
+                            { text: 'Безопасность клиента', link: '/infra-security/#security' }
                         ]
                     },
                     {
                         text: 'Анализ и проектирование',
-                        link: '/analysis/index',
+                        link: '/analysis/',
                         items: [
-                            { text: 'Анализ постановки задачи', link: '/analysis/index' },
+                            { text: 'Анализ постановки задачи', link: '/analysis/' },
                             { text: 'Декомпозиция задач', link: '/analysis/decomposition' },
-                            { text: 'Проектирование решений', link: '/analysis/index#design' }
+                            { text: 'Проектирование решений', link: '/analysis/#design' }
                         ]
                     },
                     {
                         text: 'Организация и управление',
-                        link: '/management/index',
+                        link: '/management/',
                         items: [
-                            { text: 'Организация работ', link: '/management/index' },
+                            { text: 'Организация работ', link: '/management/' },
                             { text: 'Развитие команды', link: '/management/team' },
-                            { text: 'Интервью и подбор', link: '/management/index#interview' }
+                            { text: 'Интервью и подбор', link: '/management/#interview' }
                         ]
                     }
                 ]

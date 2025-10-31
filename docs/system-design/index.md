@@ -1,4 +1,4 @@
-## Системный дизайн
+# Системный дизайн
 
 ### Цели и ограничения
 
@@ -177,3 +177,267 @@
 8. План деградации/инцидентов: флаги, откат, запуск в пониженном режиме.
 9. План capacity/затрат: масштабирование и лимиты, расчёт емкости.
 10. Документация: ADR, схемы, runbooks, тестовые сценарии нагрузок.
+
+<h2 id="principles">KISS (Keep It Simple, Stupid) </h2>
+
+**Суть:** простые решения работают лучше сложных. Чем меньше слоёв абстракции и побочных эффектов, тем легче
+поддерживать и расширять систему.
+
+**Основная идея:**
+Код должен быть очевидным для любого разработчика, читающего его впервые. Простота не означает примитивность — она
+требует ясной архитектуры, минимализма и осознанного отказа от избыточных оптимизаций.
+
+**Рекомендации:**
+
+* Не усложняй алгоритмы без необходимости.
+* Избегай "гибкости наперёд" — добавляй абстракции, когда они действительно нужны.
+* Пиши код, который легко объяснить словами.
+* Убирай дублирование логики и бесполезные уровни вложенности.
+* Простое решение, которое работает, всегда предпочтительнее идеального, но непонятного.
+
+**Пример:**
+
+```ts
+// Плохо
+function fetchDataAndProcess(url: string, handler: (data: any) => void) {
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const result = handler(data)
+            console.log('Processed:', result)
+            return result
+        })
+        .catch(err => console.error('Error:', err))
+}
+
+// Лучше
+async function fetchData(url: string) {
+    const res = await fetch(url)
+    return res.json()
+}
+```
+
+## DRY (Don’t Repeat Yourself)
+
+**Суть:** избегай дублирования логики, данных и поведения.
+
+**Основная идея:**
+Каждый фрагмент знания должен иметь единственное, недвусмысленное представление в системе. Повторение приводит к
+рассинхронизации, ошибкам и сложностям при изменениях.
+
+**Рекомендации:**
+
+* Выноси повторяющиеся конструкции в функции, компоненты, утилиты.
+* Используй общие типы и интерфейсы в TypeScript.
+* Не дублируй данные в разных слоях — синхронизируй через источник истины (single source of truth).
+* Следи, чтобы переиспользование не превращалось в чрезмерную обобщённость.
+
+**Пример:**
+
+```ts
+// Плохо: одинаковая логика форматирования
+function formatPrice(price: number) {
+    return `${price.toFixed(2)} ₽`
+}
+
+function formatTotal(sum: number) {
+    return `${sum.toFixed(2)} ₽`
+}
+
+// Лучше: общая функция
+function formatCurrency(value: number, currency = '₽') {
+    return `${value.toFixed(2)} ${currency}`
+}
+```
+
+**Баланс:**
+Не стоит превращать DRY в догму. Избыточная "унификация" может привести к тесной связности и усложнению кода. Иногда
+проще повторить небольшую часть логики, чем создавать слишком абстрактный слой.
+
+## SOLID
+
+Набор из пяти принципов объектно-ориентированного проектирования, направленных на устойчивость и расширяемость кода.
+
+### S — Single Responsibility Principle (Принцип единственной ответственности)
+
+Класс или модуль должен иметь одну чётко определённую задачу.
+Изменение бизнес-логики должно затрагивать минимальное количество модулей.
+
+```ts
+// Плохо: класс делает всё сразу
+class UserService {
+    saveUser(user: User) { /* ... */
+    }
+
+    sendWelcomeEmail(user: User) { /* ... */
+    }
+}
+
+// Лучше: разделение ответственности
+class UserRepository {
+    save(user: User) { /* ... */
+    }
+}
+
+class UserNotifier {
+    sendWelcomeEmail(user: User) { /* ... */
+    }
+}
+```
+
+### O — Open/Closed Principle (Открыт для расширения, закрыт для модификации)
+
+Поведение системы должно расширяться без изменения уже проверенного кода.
+
+```ts
+// Плохо: добавление новых типов ломает старый код
+function calculateArea(shape: any) {
+    if (shape.type === 'circle') return Math.PI * shape.r ** 2
+    if (shape.type === 'square') return shape.size ** 2
+}
+
+// Лучше: полиморфизм
+interface Shape {
+    area(): number
+}
+
+class Circle implements Shape {
+    constructor(private r: number) {
+    }
+
+    area() {
+        return Math.PI * this.r ** 2
+    }
+}
+
+class Square implements Shape {
+    constructor(private size: number) {
+    }
+
+    area() {
+        return this.size ** 2
+    }
+}
+```
+
+### L — Liskov Substitution Principle (Принцип подстановки Барбары Лисков)
+
+Объекты подклассов должны корректно заменять объекты базового класса без нарушения поведения программы.
+
+```ts
+// Плохо: подкласс нарушает контракт
+class Bird {
+    fly() {
+    }
+}
+
+class Penguin extends Bird {
+    fly() {
+        throw new Error("Penguins can't fly")
+    }
+}
+
+// Лучше: корректная иерархия
+class Bird {
+}
+
+class FlyingBird extends Bird {
+    fly() {
+    }
+}
+
+class Penguin extends Bird {
+}
+```
+
+### I — Interface Segregation Principle (Принцип разделения интерфейсов)
+
+Интерфейсы не должны заставлять реализовывать лишние методы.
+
+```ts
+// Плохо
+interface Worker {
+    work(): void
+
+    eat(): void
+}
+
+class Robot implements Worker {
+    work() {
+    }
+
+    eat() {
+    } // не имеет смысла
+}
+
+// Лучше
+interface Workable {
+    work(): void
+}
+
+interface Eatable {
+    eat(): void
+}
+
+class Human implements Workable, Eatable {
+    work() {
+    }
+
+    eat() {
+    }
+}
+
+class Robot implements Workable {
+    work() {
+    }
+}
+```
+
+### D — Dependency Inversion Principle (Принцип инверсии зависимостей)
+
+Модули верхнего уровня не должны зависеть от деталей нижнего уровня. Оба должны зависеть от абстракций.
+
+```ts
+// Плохо
+class ApiService {
+    constructor(private db: MySQLDatabase) {
+    }
+
+    getData() {
+        return this.db.query('SELECT * FROM data')
+    }
+}
+
+// Лучше
+interface Database {
+    query(sql: string): any
+}
+
+class MySQLDatabase implements Database {
+    query(sql: string) { /* ... */
+    }
+}
+
+class ApiService {
+    constructor(private db: Database) {
+    }
+
+    getData() {
+        return this.db.query('SELECT * FROM data')
+    }
+}
+```
+
+## Итоговое сравнение
+
+| Принцип   | Цель                         | Ключевая мысль                                  |
+|-----------|------------------------------|-------------------------------------------------|
+| **KISS**  | Простота                     | Избегай ненужной сложности                      |
+| **DRY**   | Минимизация дублирования     | Одна истина для каждого знания                  |
+| **SOLID** | Расширяемость и устойчивость | Делай код гибким, изолированным и предсказуемым |
+
+Применение этих принципов в совокупности создаёт код, который проще поддерживать, тестировать и развивать в долгосрочной
+перспективе.
+
+
+

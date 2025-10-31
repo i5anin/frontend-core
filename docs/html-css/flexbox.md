@@ -1,4 +1,4 @@
-## Flexbox и Grid
+# Flexbox и Grid
 
 ### Общая идея
 
