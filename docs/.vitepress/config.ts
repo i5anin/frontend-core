@@ -10,13 +10,7 @@ export default defineConfig({
         siteTitle: 'Frontend Core',
         nav: [
             { text: 'Главная', link: '/' },
-            { text: 'Подготовка', link: '/docs/' },
-            { text: 'Контакты', link: '/contact' }
-        ],
-        sidebar: [
-            {
-                text: 'Документация проекта',
-                collapsed: false,
+            { text: 'Документация проекта',
                 items: [
                     { text: 'Быстрый старт', link: '/getting-started' },
                     { text: 'Архитектура', link: '/architecture' },
@@ -26,8 +20,10 @@ export default defineConfig({
                     { text: 'Тестирование', link: '/testing' },
                     { text: 'Безопасность', link: '/security' },
                     { text: 'Доставка', link: '/delivery' }
-                ]
-            },
+                ] },
+            { text: 'Контакты', link: '/contact' }
+        ],
+        sidebar: [
             {
                 text: 'Подготовка по направлениям',
                 collapsed: false,

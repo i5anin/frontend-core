@@ -11,7 +11,7 @@ hero:
       link: /javascript/
     - theme: alt
       text: GitHub
-      link: https://github.com/your-repo
+      link: https://github.com/i5anin
 features:
   - title: 💛 JavaScript
     details: Основы, ООП, Асинхронность, Работа с объектами, Engine
