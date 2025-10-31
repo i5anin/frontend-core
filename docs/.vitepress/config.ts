@@ -7,7 +7,7 @@ export default defineConfig({
     cleanUrls: true,
 
     themeConfig: {
-        siteTitle: 'PF-FORUM Docs',
+        siteTitle: 'Frontend Core',
         nav: [
             { text: 'Главная', link: '/' },
             { text: 'Подготовка', link: '/docs/' },

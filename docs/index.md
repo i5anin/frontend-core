@@ -3,25 +3,25 @@
 ## [JavaScript](javascript/)
 - [Синтаксис и типы данных](javascript/index.md)
 
-- [Асинхронное программирование](./js/async.md)
+- [Асинхронное программирование](./javascript/async.md)
 
-- [Продвинутая работа с объектами](./js/index.md#объекты)
+- [Продвинутая работа с объектами](./javascript/index.md#объекты)
 
-- [ООП в JavaScript](./js/oop.md)
+- [ООП в JavaScript](./javascript/oop.md)
 
-- [Функциональное программирование](./js/functional.md)
+- [Функциональное программирование](./javascript/functional.md)
 
-- [Браузерное API](./js/index.md#браузерное-api)
+- [Браузерное API](./javascript/index.md#браузерное-api)
 
-- [Внутреннее устройство JS](./js/index.md#engine)
+- [Внутреннее устройство JS](./javascript/index.md#engine)
 
-## [TypeScript](./ts/)
+## [TypeScript](./typescript/)
 
-- [Типизация и ключевые принципы](./ts/index.md)
+- [Типизация и ключевые принципы](./typescript/index.md)
 
-- [Объединение и пересечение типов](./ts/types.md)
+- [Объединение и пересечение типов](./typescript/types.md)
 
-- [Интерфейсы и дженерики](./ts/types.md#generics)
+- [Интерфейсы и дженерики](./typescript/types.md#generics)
 
 ## [HTML / CSS / PCSS](./html-css/)
 

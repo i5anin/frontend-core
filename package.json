@@ -6,7 +6,8 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --host 0.0.0.0  --port 4173 --strictPort",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs --host 0.0.0.0 --port 4173"
+    "docs:preview": "vitepress preview docs --host 0.0.0.0 --port 4173",
+    "docs:lint": "vitepress build --dry-run"
   },
   "devDependencies": {
     "vitepress": "^1.6.4"
