@@ -48,17 +48,6 @@ export default defineConfig({
                         }
                     }
                 },
-                // Настройки MiniSearch (индексация полей и поиск по фрагментам)
-                miniSearch: {
-                    options: {
-                        // Полнотекстовая индексация заголовков и содержимого
-                        fields: ['title', 'text'],
-                        storeFields: ['title', 'text', 'section', 'path'],
-                        // Поддержка русской морфологии у MiniSearch ограничена;
-                        // сохраняем строгий поиск по токенам без стемминга.
-                        processTerm: (t: string) => t.toLowerCase()
-                    }
-                }
             }
         },
 
