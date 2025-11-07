@@ -224,9 +224,11 @@ interface ApiResponse<T> {
   error?: string
 }
 
-async function getUser(id: string): Promise<ApiResponse<User>> {
-  const res = await fetch(`/api/user/${id}`)
-  return res.json()
+async function getUser(
+    id: string
+): Promise<ApiResponse<User>> {
+    const res = await fetch(`/api/user/${id}`)
+    return res.json()
 }
 ```
 
@@ -268,8 +270,10 @@ function fail(msg: string): never {
 
 ```ts
 function isUser(obj: any): obj is User {
-  return typeof obj.id === 'string' && typeof obj.email === 'string'
+    return typeof obj.id === 'string'
+        && typeof obj.email === 'string'
 }
+
 ```
 
 #### Discriminated Unions
@@ -280,7 +284,9 @@ type Shape =
   | { kind: 'square'; size: number }
 
 function area(s: Shape) {
-  return s.kind === 'circle' ? Math.PI * s.radius ** 2 : s.size ** 2
+    return s.kind === 'circle'
+        ? Math.PI * s.radius ** 2
+        : s.size ** 2
 }
 ```
 
