@@ -65,13 +65,19 @@ interface User {
   name?: string // необязательное поле
 }
 
-const user: User = { id: 'u1', email: 'a@example.com' }
+const user: User = 
+    { id: 'u1', email: 'a@example.com' }
 ```
 
 #### Объединения и пересечения
 
 ```ts
-type ApiResponse = { status: number } & ({ data: unknown } | { error: string })
+type ApiResponse = {
+    status: number
+} & (
+    | { data: unknown }
+    | { error: string }
+    )
 ```
 
 #### Литеральные типы
@@ -92,7 +98,8 @@ enum Status {
 #### Кортежи
 
 ```ts
-const entry: [string, number] = ['views', 100]
+const entry: [string, number] = 
+    ['views', 100]
 ```
 
 ---
