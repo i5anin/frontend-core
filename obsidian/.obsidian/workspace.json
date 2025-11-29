@@ -947,7 +947,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/JS – Асинхронное программирование.md",
+                "file": "JavaScript/JS – Продвинутая работа с объектами.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "JS – Асинхронное программирование"
+              "title": "JS – Продвинутая работа с объектами"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/JS – Асинхронное программирование.md",
+                "file": "JavaScript/JS – Продвинутая работа с объектами.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура JS – Асинхронное программирование"
+              "title": "Структура JS – Продвинутая работа с объектами"
             }
           },
           {
@@ -1180,6 +1180,7 @@
   "active": "619b9f9d5c8ee2f9",
   "lastOpenFiles": [
     "JavaScript/JavaScript.md",
+    "JavaScript/JS – Продвинутая работа с объектами.md",
     "JavaScript/JS – Асинхронное программирование.md",
     "JavaScript/JS – Синтаксис и типы данных.md",
     "JavaScript",
@@ -1209,7 +1210,6 @@
     "0_Работа/3 главные проблемы FSD.md",
     "5_Развитие/Без названия.md",
     "5_Развитие/Feature-Sliced Design (FSD), SOLID и ООП.md",
-    "5_Развитие/FSD для моего проекта таблиц.md",
     "0_Работа/FSD",
     "sources/Pasted image 20250413224254.png",
     "sources/Pasted image 20250413223850.png",
