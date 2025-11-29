@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue – Компоненты.md",
+                "file": "Vue/Vue – Слоты.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue – Компоненты"
+              "title": "Vue – Слоты"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 417.5
+    "width": 389.50434494018555
   },
   "right": {
     "id": "f5d87b6c550b1db3",
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue – Компоненты.md",
+                "file": "Vue/Vue – Слоты.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue – Компоненты"
+              "title": "Структура Vue – Слоты"
             }
           },
           {
@@ -220,7 +220,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.5
+    "width": 404.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,6 +246,7 @@
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
     "Vue/Vue.md",
+    "Vue/Vue – Слоты.md",
     "Vue/Vue – Компоненты.md",
     "Vue/Vue – Composition API.md",
     "Главная.md",
@@ -272,7 +274,6 @@
     "HTML и CSS/HTML CSS – CSS переменные.md",
     "HTML",
     "HTML и CSS",
-    "TypeScript/TS – Типы данных, объединение и пересечение типов.md",
     "TypeScript",
     "JavaScript",
     "Excalidraw",
