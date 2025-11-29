@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue – Слоты.md",
+                "file": "Vue/Vue – Provide Inject.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue – Слоты"
+              "title": "Vue – Provide Inject"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue – Слоты.md",
+                "file": "Vue/Vue – Provide Inject.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue – Слоты"
+              "title": "Структура Vue – Provide Inject"
             }
           },
           {
@@ -246,6 +246,9 @@
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
     "Vue/Vue.md",
+    "Vue/Vue – Provide Inject.md",
+    "Vue – Provide/Inject.md",
+    "Vue – Provide",
     "Vue/Vue – Слоты.md",
     "Vue/Vue – Компоненты.md",
     "Vue/Vue – Composition API.md",
@@ -270,8 +273,6 @@
     "HTML и CSS/HTML CSS – Встраивание медиа.md",
     "HTML и CSS/HTML CSS – Позиционирование и наложение элементов.md",
     "HTML и CSS/HTML CSS – Формы и их элементы.md",
-    "HTML и CSS/HTML CSS – Псевдоклассы и псевдоэлементы.md",
-    "HTML и CSS/HTML CSS – CSS переменные.md",
     "HTML",
     "HTML и CSS",
     "TypeScript",
@@ -291,7 +292,6 @@
     "0_Работа/photo_2024-10-22_21-20-32.jpg",
     "0_Работа/photo_2024-10-22_21-20-26.jpg",
     "0_Работа/photo_2024-10-22_21-20-16.jpg",
-    "CI",
     "0_Работа/Vue.js/Pinia/piniaStore.canvas",
     "5_Развитие/Пирамида из 100 стикеров для достижения целей.canvas",
     "4_Оптимизация/canvas/Почта.canvas",

@@ -2,7 +2,7 @@
 - **[[Vue – Composition API]]**  
 - **[[Vue – Компоненты]]**  
 - **[[Vue – Слоты]]**  
-- **[[Vue – Provide/Inject]]**  
+- **[[Vue – Provide Inject]]**  
 - **[[Vue – Оптимизация кода во Vue]]**  
 - **[[Vue – Функция Render]]**  
 - **[[Vue – Плагины]]**  
