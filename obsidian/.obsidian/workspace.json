@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Главная.md",
+                "file": "Vue/Vue – Компоненты.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Главная"
+              "title": "Vue – Компоненты"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Главная.md",
+                "file": "Vue/Vue – Компоненты.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Главная"
+              "title": "Структура Vue – Компоненты"
             }
           },
           {
@@ -244,13 +244,14 @@
   },
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
-    "Vue/Vue – Composition API.md",
     "Vue/Vue.md",
+    "Vue/Vue – Компоненты.md",
+    "Vue/Vue – Composition API.md",
+    "Главная.md",
     "Vue/Vue – Options API.md",
     "HTML и CSS/HTML CSS – Как происходит рендер.md",
     "HTML и CSS/HTML и CSS.md",
     "Vue",
-    "Главная.md",
     "HTML и CSS/HTML CSS – Анимации (база).md",
     "HTML и CSS/HTML CSS – Блоки браузера.md",
     "HTML и CSS/HTML CSS – Canvas и SVG (база).md",
@@ -272,7 +273,6 @@
     "HTML",
     "HTML и CSS",
     "TypeScript/TS – Типы данных, объединение и пересечение типов.md",
-    "TypeScript/TS – TypeScript (типизация).md",
     "TypeScript",
     "JavaScript",
     "Excalidraw",
