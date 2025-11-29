@@ -947,8 +947,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/JavaScript.md",
-                "mode": "preview",
+                "file": "JavaScript/JS – Асинхронное программирование.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "JavaScript"
+              "title": "JS – Асинхронное программирование"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/JavaScript.md",
+                "file": "JavaScript/JS – Асинхронное программирование.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура JavaScript"
+              "title": "Структура JS – Асинхронное программирование"
             }
           },
           {
@@ -1179,8 +1179,9 @@
   },
   "active": "619b9f9d5c8ee2f9",
   "lastOpenFiles": [
-    "JavaScript/JS – Синтаксис и типы данных.md",
     "JavaScript/JavaScript.md",
+    "JavaScript/JS – Асинхронное программирование.md",
+    "JavaScript/JS – Синтаксис и типы данных.md",
     "JavaScript",
     "Подготовка.md",
     "Excalidraw/Drawing 2025-11-19 22.59.10.excalidraw.md",
@@ -1209,7 +1210,6 @@
     "5_Развитие/Без названия.md",
     "5_Развитие/Feature-Sliced Design (FSD), SOLID и ООП.md",
     "5_Развитие/FSD для моего проекта таблиц.md",
-    "5_Развитие/структура Feature-Sliced Design (FSD).md",
     "0_Работа/FSD",
     "sources/Pasted image 20250413224254.png",
     "sources/Pasted image 20250413223850.png",

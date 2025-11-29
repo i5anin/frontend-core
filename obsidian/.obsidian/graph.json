@@ -43,13 +43,6 @@
       }
     },
     {
-      "query": "api",
-      "color": {
-        "a": 1,
-        "rgb": 11361494
-      }
-    },
-    {
       "query": "python",
       "color": {
         "a": 1,
@@ -95,6 +88,6 @@
   "repelStrength": 14.6875,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.11013508793684873,
+  "scale": 0.596539617009566,
   "close": false
 }
