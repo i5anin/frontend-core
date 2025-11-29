@@ -1,0 +1,100 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "vue",
+      "color": {
+        "a": 1,
+        "rgb": 6608476
+      }
+    },
+    {
+      "query": "php",
+      "color": {
+        "a": 1,
+        "rgb": 3363568
+      }
+    },
+    {
+      "query": "sql",
+      "color": {
+        "a": 1,
+        "rgb": 5862883
+      }
+    },
+    {
+      "query": "css",
+      "color": {
+        "a": 1,
+        "rgb": 6785237
+      }
+    },
+    {
+      "query": "typescript",
+      "color": {
+        "a": 1,
+        "rgb": 5526755
+      }
+    },
+    {
+      "query": "api",
+      "color": {
+        "a": 1,
+        "rgb": 11361494
+      }
+    },
+    {
+      "query": "python",
+      "color": {
+        "a": 1,
+        "rgb": 754159
+      }
+    },
+    {
+      "query": "react",
+      "color": {
+        "a": 1,
+        "rgb": 1652946
+      }
+    },
+    {
+      "query": "javascript",
+      "color": {
+        "a": 1,
+        "rgb": 14925581
+      }
+    },
+    {
+      "query": "html",
+      "color": {
+        "a": 1,
+        "rgb": 14642705
+      }
+    },
+    {
+      "query": "React",
+      "color": {
+        "a": 1,
+        "rgb": 3699967
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -0.2,
+  "nodeSizeMultiplier": 0.9421875,
+  "lineSizeMultiplier": 0.763541666666667,
+  "collapse-forces": false,
+  "centerStrength": 0.572916666666667,
+  "repelStrength": 14.6875,
+  "linkStrength": 1,
+  "linkDistance": 500,
+  "scale": 0.11013508793684873,
+  "close": false
+}

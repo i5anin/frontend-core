@@ -1,0 +1,24 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "sources",
+  "showLineNumber": true,
+  "spellcheck": true,
+  "newLinkFormat": "relative",
+  "promptDelete": true,
+  "showFrontmatter": false,
+  "livePreview": false,
+  "readableLineLength": true,
+  "tabSize": 3,
+  "strictLineBreaks": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 62
+  },
+  "newFileFolderPath": "_resoures",
+  "uriCallbacks": false,
+  "trashOption": "local"
+}
