@@ -947,7 +947,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML и CSS/HTML CSS – Формы и их элементы.md",
+                "file": "HTML и CSS/HTML CSS – Встраивание медиа.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "HTML CSS – Формы и их элементы"
+              "title": "HTML CSS – Встраивание медиа"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML и CSS/HTML CSS – Формы и их элементы.md",
+                "file": "HTML и CSS/HTML CSS – Встраивание медиа.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура HTML CSS – Формы и их элементы"
+              "title": "Структура HTML CSS – Встраивание медиа"
             }
           },
           {
@@ -1180,6 +1180,7 @@
   "active": "619b9f9d5c8ee2f9",
   "lastOpenFiles": [
     "HTML и CSS/HTML и CSS.md",
+    "HTML и CSS/HTML CSS – Встраивание медиа.md",
     "HTML и CSS/HTML CSS – Формы и их элементы.md",
     "HTML и CSS/HTML CSS – Псевдоклассы и псевдоэлементы.md",
     "HTML и CSS/HTML CSS – CSS переменные.md",
@@ -1212,7 +1213,6 @@
     "Диагноз можешь временно оставить в.md",
     "sources/Безымянная Kanban-доска.md",
     "Как систематизировать бумажную тетрадь.md",
-    "Design Patterns.md",
     "0_Работа/FSD",
     "sources/Pasted image 20250413224254.png",
     "sources/Pasted image 20250413223850.png",
