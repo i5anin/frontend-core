@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue – Функция Render.md",
+                "file": "Vue/Vue – Плагины.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue – Функция Render"
+              "title": "Vue – Плагины"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue – Функция Render.md",
+                "file": "Vue/Vue – Плагины.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue – Функция Render"
+              "title": "Структура Vue – Плагины"
             }
           },
           {
@@ -246,6 +246,7 @@
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
     "Vue/Vue.md",
+    "Vue/Vue – Плагины.md",
     "Vue/Vue – Функция Render.md",
     "Vue/Vue – Оптимизация кода во Vue.md",
     "Vue/Vue – Provide Inject.md",
@@ -272,7 +273,6 @@
     "HTML и CSS/HTML CSS – Flexbox.md",
     "HTML и CSS/HTML CSS – Grid.md",
     "HTML и CSS/HTML CSS – БЭМ.md",
-    "HTML и CSS/HTML CSS – Встраивание медиа.md",
     "HTML",
     "HTML и CSS",
     "TypeScript",
