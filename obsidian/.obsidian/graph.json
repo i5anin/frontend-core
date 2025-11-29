@@ -18,14 +18,7 @@
       "query": "typescript",
       "color": {
         "a": 1,
-        "rgb": 5526755
-      }
-    },
-    {
-      "query": "python",
-      "color": {
-        "a": 1,
-        "rgb": 754159
+        "rgb": 871907
       }
     },
     {
@@ -60,6 +53,6 @@
   "repelStrength": 14.6875,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.596539617009566,
+  "scale": 0.4254970695782578,
   "close": false
 }

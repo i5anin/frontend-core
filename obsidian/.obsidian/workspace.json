@@ -969,10 +969,24 @@
             "id": "11c7c85240174a73",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
+              "type": "markdown",
+              "state": {
+                "file": "HTML и CSS/HTML CSS – Canvas и SVG (база).md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "HTML CSS – Canvas и SVG (база)"
             }
           }
         ],
@@ -1111,12 +1125,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "HTML и CSS/HTML CSS – Canvas и SVG (база).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура"
+              "title": "Структура HTML CSS – Canvas и SVG (база)"
             }
           },
           {
@@ -1188,9 +1203,11 @@
   },
   "active": "11c7c85240174a73",
   "lastOpenFiles": [
+    "HTML и CSS/HTML CSS – Семантическая верстка.md",
+    "TypeScript/TypeScript.md",
+    "JavaScript/JavaScript.md",
     "HTML и CSS/HTML CSS – Canvas и SVG (база).md",
     "HTML и CSS/HTML и CSS.md",
-    "HTML и CSS/HTML CSS – Семантическая верстка.md",
     "HTML и CSS/HTML CSS – Адаптивная верстка.md",
     "HTML и CSS/HTML CSS – Изоляция стилей.md",
     "HTML и CSS/HTML CSS – DOM и CSSOM, порядок загрузки.md",
@@ -1204,8 +1221,6 @@
     "HTML и CSS/HTML CSS – Псевдоклассы и псевдоэлементы.md",
     "HTML и CSS/HTML CSS – CSS переменные.md",
     "HTML",
-    "TypeScript/_TypeScript.md",
-    "JavaScript/_JavaScript.md",
     "HTML и CSS",
     "Подготовка.md",
     "TypeScript/TS – Типы данных, объединение и пересечение типов.md",
