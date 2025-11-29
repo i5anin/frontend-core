@@ -947,7 +947,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML и CSS/HTML CSS – Встраивание медиа.md",
+                "file": "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "HTML CSS – Встраивание медиа"
+              "title": "HTML CSS – Комбинаторы и спецификация селекторов"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML и CSS/HTML CSS – Встраивание медиа.md",
+                "file": "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура HTML CSS – Встраивание медиа"
+              "title": "Структура HTML CSS – Комбинаторы и спецификация селекторов"
             }
           },
           {
@@ -1180,11 +1180,14 @@
   "active": "619b9f9d5c8ee2f9",
   "lastOpenFiles": [
     "HTML и CSS/HTML и CSS.md",
+    "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
+    "HTML и CSS/HTML CSS – Grid.md",
+    "HTML и CSS/HTML CSS – Flexbox.md",
     "HTML и CSS/HTML CSS – Встраивание медиа.md",
+    "HTML и CSS/HTML CSS – Позиционирование и наложение элементов.md",
     "HTML и CSS/HTML CSS – Формы и их элементы.md",
     "HTML и CSS/HTML CSS – Псевдоклассы и псевдоэлементы.md",
     "HTML и CSS/HTML CSS – CSS переменные.md",
-    "HTML и CSS/HTML CSS – Позиционирование и наложение элементов.md",
     "HTML",
     "TypeScript/_TypeScript.md",
     "JavaScript/_JavaScript.md",
@@ -1210,9 +1213,6 @@
     "SWOT-анализ.md",
     "5_Развитие/Авто купить седан.md",
     "sources/Pasted image 20250413224322.png",
-    "Диагноз можешь временно оставить в.md",
-    "sources/Безымянная Kanban-доска.md",
-    "Как систематизировать бумажную тетрадь.md",
     "0_Работа/FSD",
     "sources/Pasted image 20250413224254.png",
     "sources/Pasted image 20250413223850.png",
