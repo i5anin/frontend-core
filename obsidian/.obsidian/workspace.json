@@ -947,7 +947,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML и CSS/HTML CSS – CSS переменные.md",
+                "file": "HTML и CSS/HTML CSS – Формы и их элементы.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "HTML CSS – CSS переменные"
+              "title": "HTML CSS – Формы и их элементы"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML и CSS/HTML CSS – CSS переменные.md",
+                "file": "HTML и CSS/HTML CSS – Формы и их элементы.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура HTML CSS – CSS переменные"
+              "title": "Структура HTML CSS – Формы и их элементы"
             }
           },
           {
@@ -1180,6 +1180,8 @@
   "active": "619b9f9d5c8ee2f9",
   "lastOpenFiles": [
     "HTML и CSS/HTML и CSS.md",
+    "HTML и CSS/HTML CSS – Формы и их элементы.md",
+    "HTML и CSS/HTML CSS – Псевдоклассы и псевдоэлементы.md",
     "HTML и CSS/HTML CSS – CSS переменные.md",
     "HTML и CSS/HTML CSS – Позиционирование и наложение элементов.md",
     "HTML",
@@ -1211,8 +1213,6 @@
     "sources/Безымянная Kanban-доска.md",
     "Как систематизировать бумажную тетрадь.md",
     "Design Patterns.md",
-    "Промт для генерации технички по собесам Vue.js.md",
-    "README.md",
     "0_Работа/FSD",
     "sources/Pasted image 20250413224254.png",
     "sources/Pasted image 20250413223850.png",
