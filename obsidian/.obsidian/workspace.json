@@ -947,7 +947,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Подготовка.md",
+                "file": "JavaScript/JS – Синтаксис и типы данных.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Подготовка"
+              "title": "JS – Синтаксис и типы данных"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Подготовка.md",
+                "file": "JavaScript/JS – Синтаксис и типы данных.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Подготовка"
+              "title": "Структура JS – Синтаксис и типы данных"
             }
           },
           {
@@ -1177,8 +1177,11 @@
       "obsidian-spaced-repetition:Изучать карточки": false
     }
   },
-  "active": "7ddf912e969797c3",
+  "active": "619b9f9d5c8ee2f9",
   "lastOpenFiles": [
+    "JavaScript/JavaScript.md",
+    "JavaScript/JS – Синтаксис и типы данных.md",
+    "JavaScript",
     "Подготовка.md",
     "Excalidraw/Drawing 2025-11-19 22.59.10.excalidraw.md",
     "Excalidraw",
@@ -1207,8 +1210,6 @@
     "5_Развитие/Feature-Sliced Design (FSD), SOLID и ООП.md",
     "5_Развитие/FSD для моего проекта таблиц.md",
     "5_Развитие/структура Feature-Sliced Design (FSD).md",
-    "5_Развитие/Навык речи на камеру.md",
-    "5_Развитие/настройки буфера обмена.md",
     "0_Работа/FSD",
     "sources/Pasted image 20250413224254.png",
     "sources/Pasted image 20250413223850.png",
@@ -1225,7 +1226,6 @@
     "node_modules/process/test.js",
     "node_modules/util/support/isBufferBrowser.js",
     "node_modules/util/support/isBuffer.js",
-    "node_modules/util/support",
     "0_Работа/Vue.js/Pinia/piniaStore.canvas",
     "5_Развитие/Пирамида из 100 стикеров для достижения целей.canvas",
     "4_Оптимизация/canvas/Почта.canvas",
