@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue – Архитектура фреймворка.md",
+                "file": "Vue/Vue – Store (Pinia).md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue – Архитектура фреймворка"
+              "title": "Vue – Store (Pinia)"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue – Архитектура фреймворка.md",
+                "file": "Vue/Vue – Store (Pinia).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue – Архитектура фреймворка"
+              "title": "Структура Vue – Store (Pinia)"
             }
           },
           {
@@ -246,6 +246,7 @@
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
     "Vue/Vue.md",
+    "Vue/Vue – Store (Pinia).md",
     "Vue/Vue – Архитектура фреймворка.md",
     "Vue/Vue – Плагины.md",
     "Vue/Vue – Функция Render.md",
@@ -272,7 +273,6 @@
     "HTML и CSS/HTML CSS – DOM и CSSOM, порядок загрузки.md",
     "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
     "HTML и CSS/HTML CSS – Flexbox.md",
-    "HTML и CSS/HTML CSS – Grid.md",
     "HTML",
     "HTML и CSS",
     "TypeScript",
