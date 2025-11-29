@@ -947,8 +947,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
-                "mode": "source",
+                "file": "HTML и CSS/HTML и CSS.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -962,11 +962,21 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "HTML CSS – Комбинаторы и спецификация селекторов"
+              "title": "HTML и CSS"
+            }
+          },
+          {
+            "id": "11c7c85240174a73",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ],
-        "currentTab": 41
+        "currentTab": 42
       }
     ],
     "direction": "vertical"
@@ -1101,13 +1111,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура HTML CSS – Комбинаторы и спецификация селекторов"
+              "title": "Структура"
             }
           },
           {
@@ -1177,12 +1186,18 @@
       "obsidian-spaced-repetition:Изучать карточки": false
     }
   },
-  "active": "619b9f9d5c8ee2f9",
+  "active": "11c7c85240174a73",
   "lastOpenFiles": [
+    "HTML и CSS/HTML CSS – Canvas и SVG (база).md",
     "HTML и CSS/HTML и CSS.md",
+    "HTML и CSS/HTML CSS – Семантическая верстка.md",
+    "HTML и CSS/HTML CSS – Адаптивная верстка.md",
+    "HTML и CSS/HTML CSS – Изоляция стилей.md",
+    "HTML и CSS/HTML CSS – DOM и CSSOM, порядок загрузки.md",
     "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
-    "HTML и CSS/HTML CSS – Grid.md",
     "HTML и CSS/HTML CSS – Flexbox.md",
+    "HTML и CSS/HTML CSS – Grid.md",
+    "HTML и CSS/HTML CSS – БЭМ.md",
     "HTML и CSS/HTML CSS – Встраивание медиа.md",
     "HTML и CSS/HTML CSS – Позиционирование и наложение элементов.md",
     "HTML и CSS/HTML CSS – Формы и их элементы.md",
@@ -1202,16 +1217,10 @@
     "JavaScript/JS – ООП в JavaScript.md",
     "JavaScript/JS – Продвинутая работа с объектами.md",
     "JavaScript/JS – Асинхронное программирование.md",
-    "JavaScript/JS – Синтаксис и типы данных.md",
     "JavaScript",
-    "Excalidraw/Drawing 2025-11-19 22.59.10.excalidraw.md",
     "Excalidraw",
-    "JS — синтаксис и типы данных.md",
-    "утилита, которая строит дерево приложения.md",
     "Мысли 1.canvas",
     "5_Развитие/Мысли.canvas",
-    "SWOT-анализ.md",
-    "5_Развитие/Авто купить седан.md",
     "sources/Pasted image 20250413224322.png",
     "0_Работа/FSD",
     "sources/Pasted image 20250413224254.png",
