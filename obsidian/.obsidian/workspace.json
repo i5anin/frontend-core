@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue.md",
+                "file": "Vue/Vue – Options API.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue"
+              "title": "Vue – Options API"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue.md",
+                "file": "Vue/Vue – Options API.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue"
+              "title": "Структура Vue – Options API"
             }
           },
           {
@@ -244,11 +244,12 @@
   },
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
-    "Vue",
-    "HTML и CSS/HTML и CSS.md",
     "Vue/Vue.md",
-    "Главная.md",
+    "Vue/Vue – Options API.md",
     "HTML и CSS/HTML CSS – Как происходит рендер.md",
+    "HTML и CSS/HTML и CSS.md",
+    "Vue",
+    "Главная.md",
     "HTML и CSS/HTML CSS – Анимации (база).md",
     "HTML и CSS/HTML CSS – Блоки браузера.md",
     "HTML и CSS/HTML CSS – Canvas и SVG (база).md",
@@ -290,7 +291,6 @@
     "0_Работа/photo_2024-10-22_21-20-26.jpg",
     "0_Работа/photo_2024-10-22_21-20-16.jpg",
     "CI",
-    "_resoures/doc/generate-readme.js~",
     "0_Работа/Vue.js/Pinia/piniaStore.canvas",
     "5_Развитие/Пирамида из 100 стикеров для достижения целей.canvas",
     "4_Оптимизация/canvas/Почта.canvas",
