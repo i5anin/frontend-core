@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue – Provide Inject.md",
+                "file": "Vue/Vue – Оптимизация кода во Vue.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue – Provide Inject"
+              "title": "Vue – Оптимизация кода во Vue"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue – Provide Inject.md",
+                "file": "Vue/Vue – Оптимизация кода во Vue.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue – Provide Inject"
+              "title": "Структура Vue – Оптимизация кода во Vue"
             }
           },
           {
@@ -246,6 +246,7 @@
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
     "Vue/Vue.md",
+    "Vue/Vue – Оптимизация кода во Vue.md",
     "Vue/Vue – Provide Inject.md",
     "Vue – Provide/Inject.md",
     "Vue – Provide",
@@ -272,7 +273,6 @@
     "HTML и CSS/HTML CSS – БЭМ.md",
     "HTML и CSS/HTML CSS – Встраивание медиа.md",
     "HTML и CSS/HTML CSS – Позиционирование и наложение элементов.md",
-    "HTML и CSS/HTML CSS – Формы и их элементы.md",
     "HTML",
     "HTML и CSS",
     "TypeScript",
