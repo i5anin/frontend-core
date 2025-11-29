@@ -947,7 +947,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Без названия.md",
+                "file": "Подготовка.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Без названия"
+              "title": "Подготовка"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Без названия.md",
+                "file": "Подготовка.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Без названия"
+              "title": "Структура Подготовка"
             }
           },
           {
@@ -1177,9 +1177,9 @@
       "obsidian-spaced-repetition:Изучать карточки": false
     }
   },
-  "active": "619b9f9d5c8ee2f9",
+  "active": "7ddf912e969797c3",
   "lastOpenFiles": [
-    "Без названия.md",
+    "Подготовка.md",
     "Excalidraw/Drawing 2025-11-19 22.59.10.excalidraw.md",
     "Excalidraw",
     "JS — синтаксис и типы данных.md",
@@ -1218,4 +1218,22 @@
     "0_Работа/git (2).jpg",
     "0_Работа/git (1).jpg",
     "0_Работа/photo_2024-10-22_21-20-32.jpg",
-    "0
+    "0_Работа/photo_2024-10-22_21-20-26.jpg",
+    "0_Работа/photo_2024-10-22_21-20-16.jpg",
+    "CI",
+    "_resoures/doc/generate-readme.js~",
+    "node_modules/process/test.js",
+    "node_modules/util/support/isBufferBrowser.js",
+    "node_modules/util/support/isBuffer.js",
+    "node_modules/util/support",
+    "0_Работа/Vue.js/Pinia/piniaStore.canvas",
+    "5_Развитие/Пирамида из 100 стикеров для достижения целей.canvas",
+    "4_Оптимизация/canvas/Почта.canvas",
+    "4_Оптимизация/canvas/План.canvas",
+    "4_Оптимизация/canvas/Мысли.canvas",
+    "4_Оптимизация/Почта.canvas",
+    "3_Оптимизация/canvas/Почта.canvas",
+    "3_Оптимизация/canvas/Мысли.canvas",
+    "_resoures/Pasted image 20250305221557.png"
+  ]
+}
