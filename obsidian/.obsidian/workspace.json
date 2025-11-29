@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue – Options API.md",
+                "file": "Главная.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue – Options API"
+              "title": "Главная"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue – Options API.md",
+                "file": "Главная.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue – Options API"
+              "title": "Структура Главная"
             }
           },
           {
@@ -244,6 +244,7 @@
   },
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
+    "Vue/Vue – Composition API.md",
     "Vue/Vue.md",
     "Vue/Vue – Options API.md",
     "HTML и CSS/HTML CSS – Как происходит рендер.md",
@@ -273,7 +274,6 @@
     "TypeScript/TS – Типы данных, объединение и пересечение типов.md",
     "TypeScript/TS – TypeScript (типизация).md",
     "TypeScript",
-    "JavaScript/JS – Внутреннее устройство JavaScript.md",
     "JavaScript",
     "Excalidraw",
     "Мысли 1.canvas",
