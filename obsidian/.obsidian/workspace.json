@@ -947,7 +947,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/JS – Браузерное API.md",
+                "file": "HTML и CSS/HTML CSS – CSS переменные.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "JS – Браузерное API"
+              "title": "HTML CSS – CSS переменные"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/JS – Браузерное API.md",
+                "file": "HTML и CSS/HTML CSS – CSS переменные.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура JS – Браузерное API"
+              "title": "Структура HTML CSS – CSS переменные"
             }
           },
           {
@@ -1179,7 +1179,18 @@
   },
   "active": "619b9f9d5c8ee2f9",
   "lastOpenFiles": [
-    "JavaScript/JavaScript.md",
+    "HTML и CSS/HTML и CSS.md",
+    "HTML и CSS/HTML CSS – CSS переменные.md",
+    "HTML и CSS/HTML CSS – Позиционирование и наложение элементов.md",
+    "HTML",
+    "TypeScript/_TypeScript.md",
+    "JavaScript/_JavaScript.md",
+    "HTML и CSS",
+    "Подготовка.md",
+    "TypeScript/TS – Типы данных, объединение и пересечение типов.md",
+    "TypeScript/TS – TypeScript (типизация).md",
+    "TypeScript",
+    "JavaScript/JS – Внутреннее устройство JavaScript.md",
     "JavaScript/JS – Браузерное API.md",
     "JavaScript/JS – Функциональное программирование.md",
     "JavaScript/JS – ООП в JavaScript.md",
@@ -1187,7 +1198,6 @@
     "JavaScript/JS – Асинхронное программирование.md",
     "JavaScript/JS – Синтаксис и типы данных.md",
     "JavaScript",
-    "Подготовка.md",
     "Excalidraw/Drawing 2025-11-19 22.59.10.excalidraw.md",
     "Excalidraw",
     "JS — синтаксис и типы данных.md",
@@ -1203,13 +1213,6 @@
     "Design Patterns.md",
     "Промт для генерации технички по собесам Vue.js.md",
     "README.md",
-    "JavaScript ключевое отличие между const let.md",
-    "FSD.md",
-    "по терминологии Yandex.Cloud.md",
-    "Обои космоса.md",
-    "0_Работа/Промт для генерации технички по собесам Vue.js.md",
-    "0_Работа/вопросами по Vue.js для разработчиков.md",
-    "0_Работа/вопросами по JavaScript для разработчиков.md",
     "0_Работа/FSD",
     "sources/Pasted image 20250413224254.png",
     "sources/Pasted image 20250413223850.png",
@@ -1223,9 +1226,6 @@
     "0_Работа/photo_2024-10-22_21-20-16.jpg",
     "CI",
     "_resoures/doc/generate-readme.js~",
-    "node_modules/process/test.js",
-    "node_modules/util/support/isBufferBrowser.js",
-    "node_modules/util/support/isBuffer.js",
     "0_Работа/Vue.js/Pinia/piniaStore.canvas",
     "5_Развитие/Пирамида из 100 стикеров для достижения целей.canvas",
     "4_Оптимизация/canvas/Почта.canvas",
