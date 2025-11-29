@@ -947,8 +947,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/JS – Синтаксис и типы данных.md",
-                "mode": "source",
+                "file": "JavaScript/JavaScript.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -962,7 +962,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "JS – Синтаксис и типы данных"
+              "title": "JavaScript"
             }
           }
         ],
@@ -1101,13 +1101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/JS – Синтаксис и типы данных.md",
+                "file": "JavaScript/JavaScript.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура JS – Синтаксис и типы данных"
+              "title": "Структура JavaScript"
             }
           },
           {
@@ -1179,8 +1179,8 @@
   },
   "active": "619b9f9d5c8ee2f9",
   "lastOpenFiles": [
-    "JavaScript/JavaScript.md",
     "JavaScript/JS – Синтаксис и типы данных.md",
+    "JavaScript/JavaScript.md",
     "JavaScript",
     "Подготовка.md",
     "Excalidraw/Drawing 2025-11-19 22.59.10.excalidraw.md",
