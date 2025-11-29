@@ -1,0 +1,22 @@
+- **[[Vue 3 – Options API vs Composition API]]**  
+- **[[Vue 3 – Composition API (setup, ref, reactive, computed, watch)]]**  
+- **[[Vue 3 – Реактивность (proxy, effect, track, trigger)]]**  
+- **[[Vue 3 – Жизненный цикл хуков (2025: setup → onMounted → onServerPrefetch)]]**  
+- **[[Vue 3 – Компоненты (.vue SFC, регистрация, динамические компоненты)]]**  
+- **[[Vue 3 – Слоты (named, scoped, v-slot, fallback content)]]**  
+- **[[Vue 3 – Provide / Inject (включая Symbol keys и readonly)]]**  
+- **[[Vue 3 – Телепортация <Teleport> и Suspense]]**  
+- **[[Vue 3 – Функции рендера (h(), render function, JSX)]]**  
+- **[[Vue 3 – defineAsyncComponent и динамический импорт]]**  
+- **[[Vue 3 – Оптимизация: v-once, v-memo, keep-alive (2025 стратегии)]]**  
+- **[[Vue 3 – Плагины (createApp().use(), глобальные свойства)]]**  
+- **[[Vue 3 – Директивы (встроенные + кастомные v-focus, v-intersect)]]**  
+- **[[Vue 3 – Архитектура фреймворка (reactivity + compiler + runtime)]]**  
+- **[[Vue 3 – Vite + Vue (рекомендуемый стек 2025)]]**  
+- **[[Vue 3 – Pinia (store 2025: setup stores, defineStore, $subscribe)]]**  
+- **[[Vue 3 – Vue Router 4+ (createRouter, router-view, Navigation Guard)]]**  
+- **[[Vue 3 – i18n (vue-i18n@9+, Composition API mode, lazy loading)]]**  
+- **[[Vue 3 – SSR/SSG (Nuxt 3 vs Vite SSR vs Vue SSR 2025)]]**  
+- **[[Vue 3 – Тестирование (Vitest + @vue/test-utils 2025)]]**  
+- **[[Vue 3 – TypeScript + Vue (defineComponent, PropType, ref<T>)]]**  
+- **[[Vue 3 – Performance 2025 (Compiler hints, Tree-shaking, Fragment)]]**

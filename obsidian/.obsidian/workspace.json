@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML и CSS/HTML CSS – Блоки браузера.md",
-                "mode": "source",
+                "file": "Vue/Vue.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "HTML CSS – Блоки браузера"
+              "title": "Vue"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML и CSS/HTML CSS – Блоки браузера.md",
+                "file": "Vue/Vue.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура HTML CSS – Блоки браузера"
+              "title": "Структура Vue"
             }
           },
           {
@@ -244,9 +244,13 @@
   },
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
+    "Vue",
     "HTML и CSS/HTML и CSS.md",
-    "HTML и CSS/HTML CSS – Блоки браузера.md",
+    "Vue/Vue.md",
+    "Главная.md",
+    "HTML и CSS/HTML CSS – Как происходит рендер.md",
     "HTML и CSS/HTML CSS – Анимации (база).md",
+    "HTML и CSS/HTML CSS – Блоки браузера.md",
     "HTML и CSS/HTML CSS – Canvas и SVG (база).md",
     "HTML и CSS/HTML CSS – Семантическая верстка.md",
     "TypeScript/TypeScript.md",
@@ -265,14 +269,10 @@
     "HTML и CSS/HTML CSS – CSS переменные.md",
     "HTML",
     "HTML и CSS",
-    "Подготовка.md",
     "TypeScript/TS – Типы данных, объединение и пересечение типов.md",
     "TypeScript/TS – TypeScript (типизация).md",
     "TypeScript",
     "JavaScript/JS – Внутреннее устройство JavaScript.md",
-    "JavaScript/JS – Браузерное API.md",
-    "JavaScript/JS – Функциональное программирование.md",
-    "JavaScript/JS – ООП в JavaScript.md",
     "JavaScript",
     "Excalidraw",
     "Мысли 1.canvas",
