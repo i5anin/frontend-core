@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue – Плагины.md",
+                "file": "Vue/Vue – Архитектура фреймворка.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue – Плагины"
+              "title": "Vue – Архитектура фреймворка"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue – Плагины.md",
+                "file": "Vue/Vue – Архитектура фреймворка.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue – Плагины"
+              "title": "Структура Vue – Архитектура фреймворка"
             }
           },
           {
@@ -246,6 +246,7 @@
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
     "Vue/Vue.md",
+    "Vue/Vue – Архитектура фреймворка.md",
     "Vue/Vue – Плагины.md",
     "Vue/Vue – Функция Render.md",
     "Vue/Vue – Оптимизация кода во Vue.md",
@@ -272,7 +273,6 @@
     "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
     "HTML и CSS/HTML CSS – Flexbox.md",
     "HTML и CSS/HTML CSS – Grid.md",
-    "HTML и CSS/HTML CSS – БЭМ.md",
     "HTML",
     "HTML и CSS",
     "TypeScript",
