@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Инфраструктура и безопасность/Формирование HotFix.md",
+                "file": "Инфраструктура и безопасность/Механизмы сборки проекта.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Формирование HotFix"
+              "title": "Механизмы сборки проекта"
             }
           }
         ],
@@ -191,13 +191,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Инфраструктура и безопасность/Формирование HotFix.md",
+                "file": "Инфраструктура и безопасность/Механизмы сборки проекта.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Формирование HotFix"
+              "title": "Структура Механизмы сборки проекта"
             }
           },
           {
@@ -271,6 +271,7 @@
   "active": "3878da4d3f719fd8",
   "lastOpenFiles": [
     "Инфраструктура и безопасность/Инфраструктура и безопасность.md",
+    "Инфраструктура и безопасность/Механизмы сборки проекта.md",
     "Инфраструктура и безопасность/Формирование HotFix.md",
     "Инфраструктура и безопасность/Работа с GitLab.md",
     "Инфраструктура и безопасность",
@@ -297,7 +298,6 @@
     "Vue/Vue – i18n и локализация.md",
     "Vue/Vue – Options API.md",
     "Vue/Vue – Provide Inject.md",
-    "Vue/Vue – Router.md",
     "Vue – Provide",
     "Vue",
     "HTML",
