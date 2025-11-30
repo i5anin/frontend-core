@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/Vue – Router.md",
+                "file": "Системный дизайн.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue – Router"
+              "title": "Системный дизайн"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/Vue – Router.md",
+                "file": "Системный дизайн.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Vue – Router"
+              "title": "Структура Системный дизайн"
             }
           },
           {
@@ -216,7 +216,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -245,21 +245,23 @@
   },
   "active": "0c070a179d0f17cb",
   "lastOpenFiles": [
-    "Vue/Vue.md",
+    "Главная.md",
+    "Системный дизайн.md",
+    "Vue/Vue – Архитектура фреймворка.md",
+    "Vue – Provide/Inject.md",
+    "Vue/Vue – Компоненты.md",
+    "Vue/Vue – Оптимизация кода во Vue.md",
+    "Vue/Vue – Плагины.md",
+    "Vue/Vue – Слоты.md",
+    "Vue/Vue – Функция Render.md",
+    "Vue/Vue – Composition API.md",
+    "Vue/Vue – i18n и локализация.md",
+    "Vue/Vue – Options API.md",
+    "Vue/Vue – Provide Inject.md",
     "Vue/Vue – Router.md",
     "Vue/Vue – Store (Pinia).md",
-    "Vue/Vue – Архитектура фреймворка.md",
-    "Vue/Vue – Плагины.md",
-    "Vue/Vue – Функция Render.md",
-    "Vue/Vue – Оптимизация кода во Vue.md",
-    "Vue/Vue – Provide Inject.md",
-    "Vue – Provide/Inject.md",
+    "Vue/Vue.md",
     "Vue – Provide",
-    "Vue/Vue – Слоты.md",
-    "Vue/Vue – Компоненты.md",
-    "Vue/Vue – Composition API.md",
-    "Главная.md",
-    "Vue/Vue – Options API.md",
     "HTML и CSS/HTML CSS – Как происходит рендер.md",
     "HTML и CSS/HTML и CSS.md",
     "Vue",
@@ -271,8 +273,6 @@
     "JavaScript/JavaScript.md",
     "HTML и CSS/HTML CSS – Адаптивная верстка.md",
     "HTML и CSS/HTML CSS – Изоляция стилей.md",
-    "HTML и CSS/HTML CSS – DOM и CSSOM, порядок загрузки.md",
-    "HTML и CSS/HTML CSS – Комбинаторы и спецификация селекторов.md",
     "HTML",
     "HTML и CSS",
     "TypeScript",
