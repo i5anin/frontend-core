@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Системный дизайн/Проектирование ПО (диаграммы).md",
+                "file": "Системный дизайн/Принципы KISS, DRY, SOLID.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Проектирование ПО (диаграммы)"
+              "title": "Принципы KISS, DRY, SOLID"
             }
           }
         ],
@@ -191,13 +191,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Системный дизайн/Проектирование ПО (диаграммы).md",
+                "file": "Системный дизайн/Принципы KISS, DRY, SOLID.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Проектирование ПО (диаграммы)"
+              "title": "Структура Принципы KISS, DRY, SOLID"
             }
           },
           {
@@ -271,6 +271,8 @@
   "active": "3878da4d3f719fd8",
   "lastOpenFiles": [
     "Системный дизайн/Системный дизайн.md",
+    "Системный дизайн/Принципы KISS, DRY, SOLID.md",
+    "Системный дизайн/Паттерны проектирования.md",
     "Системный дизайн/Проектирование ПО (диаграммы).md",
     "Системный дизайн/Построение моделей данных в РБД.md",
     "Системный дизайн/Протоколы обмена данными (REST, gRPC, GraphQL, SOAP).md",
@@ -298,8 +300,6 @@
     "Vue",
     "HTML и CSS/HTML CSS – Анимации (база).md",
     "HTML и CSS/HTML CSS – Блоки браузера.md",
-    "HTML и CSS/HTML CSS – Canvas и SVG (база).md",
-    "HTML и CSS/HTML CSS – Семантическая верстка.md",
     "HTML",
     "HTML и CSS",
     "TypeScript",
