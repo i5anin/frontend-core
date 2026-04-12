@@ -2,11 +2,16 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
     lang: 'ru-RU',
+<<<<<<< Updated upstream
     title: 'Frontend Core',
+=======
+    title: 'Docs',
+>>>>>>> Stashed changes
     description: 'Документация',
     cleanUrls: true,
 
     themeConfig: {
+<<<<<<< Updated upstream
         siteTitle: 'Frontend Core',
 
         search: {
@@ -36,6 +41,9 @@ export default defineConfig({
             }
         },
 
+=======
+        siteTitle: 'Docs',
+>>>>>>> Stashed changes
         nav: [
             { text: 'Главная', link: '/' },
             {
