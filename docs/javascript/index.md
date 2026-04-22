@@ -1,125 +1,19 @@
+---
+outline: false
+---
+
 # JavaScript
 
-## Синтаксис и типы данных
+JavaScript — динамический язык с прототипным наследованием, основа всей современной фронтенд-разработки. Используется как в браузере, так и на сервере (Node.js, Deno, Bun).
 
-JavaScript — это язык со слабой динамической типизацией. Основные типы данных:
+---
 
-* **Примитивы:** `string`, `number`, `boolean`, `null`, `undefined`, `bigint`, `symbol`
-* **Ссылочные типы:** `object`, `array`, `function`
+**Разделы:**
 
-Переменные объявляются с помощью `let`, `const`, `var`.
-`const` используется для константных ссылок, `let` — для блочной области видимости, `var` — для функциональной.
-
-Операторы:
-
-* Арифметические: `+`, `-`, `*`, `/`, `%`, `**`
-* Логические: `&&`, `||`, `!`
-* Сравнения: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
-* Тернарный оператор: `условие ? выражение1 : выражение2`
-* Оператор нулевого слияния: `??`
-* Опциональная цепочка: `?.`
-
-Структуры управления:
-
-* `if/else`, `switch`, `for`, `for...of`, `for...in`, `while`, `do...while`
-* `try/catch/finally` для обработки ошибок.
-
-## Асинхронное программирование
-
-Асинхронность реализуется с помощью:
-
-* **Callbacks (функции обратного вызова)**
-* **Promises** — объект, представляющий будущий результат асинхронной операции (`new Promise`, `then`, `catch`, `finally`)
-* **async/await** — синтаксический сахар над промисами для упрощения работы с асинхронным кодом:
-
-  ```js
-  async function fetchData() {
-    try {
-      const response = await fetch('/data');
-      return await response.json();
-    } catch (e) {
-      console.error(e);
-    }
-  }
-  ```
-* **Event Loop** — механизм, управляющий выполнением кода: стек вызовов, очередь задач (microtasks, macrotasks).
-
-## Продвинутая работа с объектами
-
-Создание объектов:
-
-* Литералы `{}`, `new Object()`, классы `class`, функции-конструкторы.
-* Методы `Object.keys()`, `Object.values()`, `Object.entries()`.
-* Копирование: `Object.assign()` или спред-оператор `{...obj}`.
-* Заморозка и предотвращение изменений: `Object.freeze()`, `Object.seal()`.
-
-Деструктуризация:
-
-```js
-const { name, age } = user;
-const [first, second] = array;
-```
-
-## ООП в JavaScript
-
-JavaScript основан на **прототипном наследовании**.
-Каждый объект имеет скрытую ссылку на свой прототип (`[[Prototype]]`), доступную через `Object.getPrototypeOf()` или `__proto__`.
-
-Классы:
-
-```js
-class Animal {
-  constructor(name) { this.name = name; }
-  speak() { console.log(`${this.name} говорит`); }
-}
-
-class Dog extends Animal {
-  speak() { console.log(`${this.name} лает`); }
-}
-```
-
-Методы `super()` используются для вызова конструктора или методов родителя.
-
-Инкапсуляция: приватные поля через `#field`.
-
-## Функциональное программирование
-
-Основные концепции:
-
-* **Функции первого класса** — функции можно передавать как значения.
-* **Чистые функции** — без побочных эффектов.
-* **Иммутабельность** — избегание изменения данных.
-* **Высшие функции** — принимают функции как аргументы (`map`, `filter`, `reduce`).
-
-Пример:
-
-```js
-const sum = arr => arr.reduce((a, b) => a + b, 0);
-```
-
-## Браузерное API
-
-Основные интерфейсы:
-
-* **DOM API** — работа с деревом документа (`document.querySelector`, `element.addEventListener`)
-* **Fetch API** — сетевые запросы
-* **LocalStorage / SessionStorage** — хранение данных
-* **History API** — работа с историей
-* **Canvas API** — рисование
-* **WebSocket API** — двусторонняя связь с сервером
-* **Geolocation**, **Notification**, **Clipboard** и др.
-
-## Внутреннее устройство
-
-JS — однопоточный язык с моделью **event loop**, где асинхронные задачи ставятся в очередь.
-Выполнение происходит в контексте **Call Stack**.
-Асинхронные операции (таймеры, промисы, IO) обрабатываются **Web APIs**, а затем возвращаются в **Task Queue** или **Microtask Queue**.
-
-Фазы Event Loop:
-
-1. Выполнение кода из стека.
-2. Очередь microtasks (`Promise.then`, `queueMicrotask`).
-3. Очередь macrotasks (`setTimeout`, `setInterval`).
-4. Рендеринг и повтор цикла.
-
-JS-компиляторы (V8, SpiderMonkey) выполняют **JIT-компиляцию** (just-in-time), преобразуя код в машинный на лету для повышения производительности.
+- [Синтаксис и типы данных](/javascript/syntax-and-types) — примитивы, `typeof`, Symbol, BigInt, деструктуризация
+- [Асинхронное программирование](/javascript/async) — Event Loop, Promises, `async/await`, AbortController
+- [Продвинутая работа с объектами](/javascript/objects) — Proxy, Reflect, defineProperty, deep copy
+- [ООП](/javascript/oop) — прототипная цепочка, классы ES6+, приватные поля, миксины
+- [Функциональное программирование](/javascript/functional) — pure functions, каррирование, compose, мемоизация
+- [Browser API](/javascript/browser-api) — DOM, Storage, Fetch, IntersectionObserver, WebSockets
+- [Внутреннее устройство](/javascript/internals) — V8, JIT, GC, Call Stack, Hidden Classes, утечки памяти

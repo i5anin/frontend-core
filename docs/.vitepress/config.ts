@@ -1,17 +1,12 @@
-import { defineConfig } from 'vitepress'
+import {defineConfig} from 'vitepress'
 
 export default defineConfig({
     lang: 'ru-RU',
-<<<<<<< Updated upstream
     title: 'Frontend Core',
-=======
-    title: 'Docs',
->>>>>>> Stashed changes
     description: 'Документация',
     cleanUrls: true,
 
     themeConfig: {
-<<<<<<< Updated upstream
         siteTitle: 'Frontend Core',
 
         search: {
@@ -41,25 +36,22 @@ export default defineConfig({
             }
         },
 
-=======
-        siteTitle: 'Docs',
->>>>>>> Stashed changes
         nav: [
-            { text: 'Главная', link: '/' },
+            {text: 'Главная', link: '/'},
             {
                 text: 'Документация проекта',
                 items: [
-                    { text: 'JavaScript', link: '/javascript/' },
-                    { text: 'TypeScript', link: '/typescript/' },
-                    { text: 'HTML / CSS', link: '/html-css/' },
-                    { text: 'Vue', link: '/vue/' },
-                    { text: 'Системный дизайн', link: '/system-design/' },
-                    { text: 'Инфраструктура и безопасность', link: '/infra-security/' },
-                    { text: 'Анализ и проектирование', link: '/analysis/' },
-                    { text: 'Организация и управление', link: '/management/' }
+                    {text: 'JavaScript', link: '/javascript/'},
+                    {text: 'TypeScript', link: '/typescript/'},
+                    {text: 'HTML / CSS', link: '/html-css/'},
+                    {text: 'Vue', link: '/vue/'},
+                    {text: 'Системный дизайн', link: '/system-design/'},
+                    {text: 'Инфраструктура и безопасность', link: '/infra-security/'},
+                    {text: 'Анализ и проектирование', link: '/analysis/'},
+                    {text: 'Организация и управление', link: '/management/'}
                 ]
             },
-            { text: 'Контакты', link: '/contact' }
+            {text: 'Контакты', link: '/contact'}
         ],
 
         sidebar: {
@@ -68,13 +60,13 @@ export default defineConfig({
                     text: 'JavaScript',
                     collapsed: false,
                     items: [
-                        { text: 'Синтаксис и типы данных', link: '/javascript/syntax-and-types' },
-                        { text: 'Асинхронное программирование', link: '/javascript/async' },
-                        { text: 'Продвинутая работа с объектами', link: '/javascript/objects' },
-                        { text: 'ООП', link: '/javascript/oop' },
-                        { text: 'Функциональное программирование', link: '/javascript/functional' },
-                        { text: 'Browser API', link: '/javascript/browser-api' },
-                        { text: 'Внутреннее устройство', link: '/javascript/internals' }
+                        {text: 'Синтаксис и типы данных', link: '/javascript/syntax-and-types'},
+                        {text: 'Асинхронное программирование', link: '/javascript/async'},
+                        {text: 'Продвинутая работа с объектами', link: '/javascript/objects'},
+                        {text: 'ООП', link: '/javascript/oop'},
+                        {text: 'Функциональное программирование', link: '/javascript/functional'},
+                        {text: 'Browser API', link: '/javascript/browser-api'},
+                        {text: 'Внутреннее устройство', link: '/javascript/internals'}
                     ]
                 }
             ],
@@ -84,11 +76,11 @@ export default defineConfig({
                     text: 'TypeScript',
                     collapsed: false,
                     items: [
-                        { text: 'Типизация', link: '/typescript/' },
-                        { text: 'Типы данных', link: '/typescript/data-types' },
-                        { text: 'Union / Intersection', link: '/typescript/types' },
-                        { text: 'Интерфейсы', link: '/typescript/interfaces' },
-                        { text: 'Дженерики', link: '/typescript/generics' }
+                        {text: 'Типизация', link: '/typescript/'},
+                        {text: 'Типы данных', link: '/typescript/data-types'},
+                        {text: 'Union / Intersection', link: '/typescript/types'},
+                        {text: 'Интерфейсы', link: '/typescript/interfaces'},
+                        {text: 'Дженерики', link: '/typescript/generics'}
                     ]
                 }
             ],
@@ -98,13 +90,13 @@ export default defineConfig({
                     text: 'HTML / CSS',
                     collapsed: false,
                     items: [
-                        { text: 'Позиционирование', link: '/html-css/positioning' },
-                        { text: 'Flexbox / Grid', link: '/html-css/layout' },
-                        { text: 'БЭМ', link: '/html-css/bem' },
-                        { text: 'Псевдоклассы / элементы', link: '/html-css/pseudo' },
-                        { text: 'Адаптивность', link: '/html-css/responsive' },
-                        { text: 'Анимации', link: '/html-css/animation' },
-                        { text: 'DOM / CSSOM', link: '/html-css/dom-cssom' }
+                        {text: 'Позиционирование', link: '/html-css/positioning'},
+                        {text: 'Flexbox / Grid', link: '/html-css/layout'},
+                        {text: 'БЭМ', link: '/html-css/bem'},
+                        {text: 'Псевдоклассы / элементы', link: '/html-css/pseudo'},
+                        {text: 'Адаптивность', link: '/html-css/responsive'},
+                        {text: 'Анимации', link: '/html-css/animation'},
+                        {text: 'DOM / CSSOM', link: '/html-css/dom-cssom'}
                     ]
                 }
             ],
@@ -114,15 +106,15 @@ export default defineConfig({
                     text: 'Vue',
                     collapsed: false,
                     items: [
-                        { text: 'Options API', link: '/vue/options-api' },
-                        { text: 'Composition API', link: '/vue/composition-api' },
-                        { text: 'Компоненты', link: '/vue/components' },
-                        { text: 'Слоты', link: '/vue/slots' },
-                        { text: 'Provide / Inject', link: '/vue/provide-inject' },
-                        { text: 'Render', link: '/vue/render' },
-                        { text: 'Store', link: '/vue/store' },
-                        { text: 'Router', link: '/vue/router' },
-                        { text: 'i18n', link: '/vue/i18n' }
+                        {text: 'Options API', link: '/vue/options-api'},
+                        {text: 'Composition API', link: '/vue/composition-api'},
+                        {text: 'Компоненты', link: '/vue/components'},
+                        {text: 'Слоты', link: '/vue/slots'},
+                        {text: 'Provide / Inject', link: '/vue/provide-inject'},
+                        {text: 'Render', link: '/vue/render'},
+                        {text: 'Store', link: '/vue/store'},
+                        {text: 'Router', link: '/vue/router'},
+                        {text: 'i18n', link: '/vue/i18n'}
                     ]
                 }
             ],
@@ -132,11 +124,11 @@ export default defineConfig({
                     text: 'Системный дизайн',
                     collapsed: false,
                     items: [
-                        { text: 'Протоколы', link: '/system-design/protocols' },
-                        { text: 'Модели данных', link: '/system-design/data-models' },
-                        { text: 'Паттерны', link: '/system-design/patterns' },
-                        { text: 'KISS / DRY / SOLID', link: '/system-design/principles' },
-                        { text: 'SPA / SSR / SSG', link: '/system-design/rendering' }
+                        {text: 'Протоколы', link: '/system-design/protocols'},
+                        {text: 'Модели данных', link: '/system-design/data-models'},
+                        {text: 'Паттерны', link: '/system-design/patterns'},
+                        {text: 'KISS / DRY / SOLID', link: '/system-design/principles'},
+                        {text: 'SPA / SSR / SSG', link: '/system-design/rendering'}
                     ]
                 }
             ],
@@ -146,11 +138,11 @@ export default defineConfig({
                     text: 'Инфраструктура и безопасность',
                     collapsed: false,
                     items: [
-                        { text: 'GitLab', link: '/infra-security/gitlab' },
-                        { text: 'Сборка', link: '/infra-security/build' },
-                        { text: 'Конфиги сборки', link: '/infra-security/config' },
-                        { text: 'Auth', link: '/infra-security/auth' },
-                        { text: 'Client Security', link: '/infra-security/security' }
+                        {text: 'GitLab', link: '/infra-security/gitlab'},
+                        {text: 'Сборка', link: '/infra-security/build'},
+                        {text: 'Конфиги сборки', link: '/infra-security/config'},
+                        {text: 'Auth', link: '/infra-security/auth'},
+                        {text: 'Client Security', link: '/infra-security/security'}
                     ]
                 }
             ],
@@ -160,9 +152,9 @@ export default defineConfig({
                     text: 'Анализ',
                     collapsed: false,
                     items: [
-                        { text: 'Анализ задачи', link: '/analysis/task' },
-                        { text: 'Декомпозиция', link: '/analysis/decomposition' },
-                        { text: 'Проектирование', link: '/analysis/design' }
+                        {text: 'Анализ задачи', link: '/analysis/task'},
+                        {text: 'Декомпозиция', link: '/analysis/decomposition'},
+                        {text: 'Проектирование', link: '/analysis/design'}
                     ]
                 }
             ],
@@ -172,9 +164,9 @@ export default defineConfig({
                     text: 'Управление',
                     collapsed: false,
                     items: [
-                        { text: 'Организация работ', link: '/management/work' },
-                        { text: 'Команда', link: '/management/team' },
-                        { text: 'Интервью', link: '/management/interview' }
+                        {text: 'Организация работ', link: '/management/work'},
+                        {text: 'Команда', link: '/management/team'},
+                        {text: 'Интервью', link: '/management/interview'}
                     ]
                 }
             ]
