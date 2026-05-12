@@ -7,22 +7,30 @@
 ## TL;DR
 
 ```powershell
-# 1. Зависимости
+# 1. Зависимости (винда + защита от сломанных PS-модулей)
 winget install Oven-sh.Bun
 winget install astral-sh.uv
 # закрыть и снова открыть терминал
 
-bun --version   # проверка
+bun --version
 uv --version
 
-# 2. Установщик плагина
+# 2. CLI Claude Code (нужен memory-agent'у для компрессии, иначе Generator падает)
+npm install -g @anthropic-ai/claude-code
+claude --version
+
+# 3. Установщик плагина
 npx -y claude-mem@latest install
 # Визард: Claude Code → Worker → Claude Agent SDK → Subscription plan → Haiku 4.5
 
-# 3. Перезапустить Claude Code (закрыть-открыть приложение)
+# 4. Перезапустить Claude Code (закрыть-открыть приложение)
+Get-Process | Where-Object Name -like "*claude*" | Stop-Process -Force
+# затем: Win → набрать "Claude" → Enter
 ```
 
 После рестарта Claude Code хуки активируются, наблюдения начинают копиться. Веб-UI: <http://localhost:37777>.
+
+> 💡 Если CLI Claude Code не поставить (шаг 2) — плагин всё равно запишется и `PROMPT`-карточки появятся в панели, но компрессия в `learned/completed/investigated` падать будет. Подробнее в «Грабли #5».
 
 ---
 
@@ -140,6 +148,16 @@ npx -y claude-mem@latest install
 
 Хуки регистрируются Claude Code **на старте**, поэтому уже открытая сессия их не видит. **Закрой приложение полностью** и открой заново.
 
+Однострочник в PowerShell (убивает все процессы Claude, включая трей):
+
+```powershell
+Get-Process | Where-Object Name -like "*claude*" | Stop-Process -Force
+```
+
+Потом открой приложение из меню Пуск (`Win` → набери `Claude` → `Enter`). Через `Start-Process claude` Microsoft Store-версия запускается криво — у неё специальный AppX-AppID, проще через Пуск.
+
+> ⚠ Воркер на `:37777` **перезапускать не надо** — это отдельный фоновый процесс, не часть Claude Code. Если боишься «зачем он висит» — это норма.
+
 После рестарта в новой сессии должны появиться:
 
 - Skill `/mem-search <query>` в автокомплите `/`.
@@ -167,9 +185,19 @@ ls "$env:USERPROFILE\.claude-mem"
 # Ожидается: claude-mem.db, settings.json, supervisor.json, worker.pid, .env, corpora/, logs/, backups/
 ```
 
-Открой <http://localhost:37777> в браузере — увидишь панель **claude-mem**. Сначала там пусто («No items to display»). Открой Claude Code в любом проекте, поработай — observations начнут литься в реальном времени.
+Открой <http://localhost:37777> в браузере — увидишь панель **claude-mem**. Сначала там пусто («No items to display»). Открой Claude Code в любом проекте, поработай — observations начнут литться в реальном времени.
 
 > ⚠ Память подмешивается **со ВТОРОЙ сессии** в проекте. Первая сессия проекта только сеет данные.
+
+### Что увидишь в первой работающей сессии
+
+После рестарта Claude Code напиши мне в новом окне что-нибудь типа «прочитай README в `<папка проекта>`» — это пнёт хуки `UserPromptSubmit` и `PostToolUse(Read)`. На панели появятся:
+
+- Карточки `PROMPT` с твоими сообщениями (моментально, сразу при отправке).
+- В верхнем правом углу — dropdown с именем проекта (по cwd).
+- В Console внизу — события `[HOOK]`, `[SESSION]`, `[DB]`.
+
+> ⚠ Если в Console видишь красное `SESSION Generator failed (... Claude executable not found)` — значит CLI Claude Code не поставлен. Сырые `PROMPT`-карточки писаться будут, но компрессия в `learned/completed/investigated` отвалится. Лечится `npm install -g @anthropic-ai/claude-code` (см. Грабли #5). После установки CLI **рестарт не нужен** — Generator проверяет PATH на каждый запуск.
 
 ---
 
@@ -190,9 +218,19 @@ ls "$env:USERPROFILE\.claude-mem"
 
 | Сценарий | Действие |
 |----------|----------|
+| **Обе системы параллельно** ⭐ (рекомендую) | Удалить блок `"env"` из `~/.claude/settings.json`. Встроенная (курируемые заметки про пользователя, профиль, ссылки) + claude-mem (автолог всех действий через хуки) работают одновременно — не конфликтуют. Дополняют друг друга. |
 | **Только claude-mem** | Ничего не трогать. Встроенная отключена, всё идёт через плагин. |
-| **Обе системы параллельно** | Удалить блок `"env"` из `~/.claude/settings.json`. Встроенная (курируемые заметки про пользователя) + claude-mem (автолог всех действий) работают одновременно — не конфликтуют. |
 | **Только встроенная** | Удалить плагин: `npx claude-mem uninstall`. |
+
+Финальный `~/.claude/settings.json` для варианта «обе параллельно»:
+
+```json
+{
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true
+  }
+}
+```
 
 ---
 
@@ -264,6 +302,38 @@ Antivirus / Defender держит файлы частично загруженн
 Remove-Item -Recurse -Force "$env:LOCALAPPDATA\npm-cache\_npx" -ErrorAction SilentlyContinue
 ```
 
+### 5. `Generator failed: Claude executable not found` ⚠ важно
+
+В Console панели `:37777` после первой работающей сессии:
+
+> `SESSION  Generator failed (provider=claude, error=Claude executable not found. Please either:`
+> `  1. Add "claude" to your system PATH, or`
+> `  2. Set CLAUDE_CODE_PATH in ~/.claude-mem/settings.json)`
+
+И сразу следом:
+> `CHROMA   User prompt sync failed, continuing without vector search  MCP error -32000: Connection closed`
+
+Memory-agent (компонент, который сжимает наблюдения через Haiku 4.5) запускается через CLI `claude`. Если стоит только Microsoft Store-версия Claude Code — её бинарника в обычном PATH нет, и Generator падает. Сырые `PROMPT`-карточки в БД при этом **пишутся** (хуки работают), но **компрессия в `learned/completed/investigated` не делается**, и Chroma не индексирует векторы (поэтому второй ERROR — следствие первого).
+
+**Решение** — поставить CLI Claude Code через npm. Обходит сломанный `claude.ai/install.ps1` (который установщик плагина пытается дёрнуть на шаге «Install Claude Code now?» и падает на `Get-FileHash`):
+
+```powershell
+npm install -g @anthropic-ai/claude-code
+claude --version
+```
+
+После этого следующий же запуск Generator-а подцепит `claude` из PATH и начнёт компрессировать. **Перезапуск Claude Code не нужен** — Generator проверяет PATH на каждый запуск.
+
+**Альтернатива** — указать абсолютный путь в `~/.claude-mem/settings.json`:
+
+```json
+{
+  "CLAUDE_CODE_PATH": "C:\\Users\\<USER>\\AppData\\Local\\Microsoft\\WindowsApps\\claude.exe"
+}
+```
+
+Но npm-путь чище и даёт тебе ещё и работающую CLI-команду `claude` в любом терминале.
+
 ---
 
 ## Структура файлов после установки
@@ -321,6 +391,30 @@ C:\Users\<USER>\.claude-mem\
 | `/how-it-works` | встроенная справка |
 | `npx claude-mem install` | переустановка / обновление |
 | `npx claude-mem uninstall` | удалить плагин |
+
+---
+
+## Как мы ставили (живой лог 2026-05-13)
+
+Хронология реальной установки — может пригодиться, если что-то пошло иначе и непонятно где ты сейчас на этом пути.
+
+| Этап | Что произошло | Действие |
+|------|--------------|----------|
+| Pre-checks | Node v24.11.1, npm 11.7.0, порт 37777 свободен, `~/.claude/settings.json` ещё не было | ОК, поехали |
+| Попытка `/plugin marketplace add thedotmack/claude-mem` | `/plugin isn't available in this environment.` | Microsoft Store-сборка не поддерживает плагин-менеджер. Идём через `npx` |
+| `npx -y claude-mem@latest install` | `ECONNRESET` при стриме тарбола | РФ-провайдер режет npm. Поднял retry-таймауты переменными окружения, прошло со второго раза |
+| Визард | Claude Code → Worker → Claude Agent SDK → Subscription plan → Haiku 4.5 | Стандартный путь |
+| Шаг «Install Claude Code now? Yes» | `claude.ai/install.ps1` упал на `Get-FileHash` | Пропустили — Store-версия и без CLI работает (на этом этапе казалось, что да) |
+| Шаг «Install Bun» | Падение `Expand-Archive ... модуль не загрузить` | Поставили вручную: `winget install Oven-sh.Bun`, рестарт терминала, `bun --version` → `1.3.13` |
+| Шаг «Install uv» | Сам не упал, но на всякий поставили заранее | `winget install astral-sh.uv` → `0.11.13` |
+| Повтор `npx claude-mem install`, «Overwrite? Yes» | `Runtime ready (Bun 1.3.13, uv 0.11.13) OK` → `Worker ready at http://localhost:37777 OK` → `Installation Complete` | ✅ |
+| Проверка | `:37777` отвечает 200, `~/.claude-mem/claude-mem.db` 216KB, плагин в `enabledPlugins` | ✅ |
+| Обнаружили `CLAUDE_CODE_DISABLE_AUTO_MEMORY=1` в `settings.json` | Установщик отключил встроенную file-based память Claude Code | Решили оставить **обе системы** — убрали блок `"env"` из `~/.claude/settings.json` |
+| Рестарт Claude Code | `Get-Process | Where-Object Name -like "*claude*" | Stop-Process -Force`, потом Win → Claude → Enter | ✅ |
+| Первая работающая сессия | `PROMPT`-карточки появились в `:37777`, dropdown проекта зажёгся | 🎉 |
+| Но! В Console красное `Generator failed: Claude executable not found` + `CHROMA MCP error -32000` | Компрессия и векторный поиск не работают без CLI Claude Code | Решение: `npm install -g @anthropic-ai/claude-code` (без рестарта приложения — Generator проверяет PATH на каждом запуске) |
+
+Главный урок: **поставь CLI Claude Code через npm ДО запуска `npx claude-mem install`** — это убирает половину проблем разом (Grabli #3 + #5). Я обновил TL;DR с учётом этого.
 
 ---
 
