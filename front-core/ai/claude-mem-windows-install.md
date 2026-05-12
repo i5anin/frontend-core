@@ -18,6 +18,7 @@ uv --version
 # 2. CLI Claude Code (нужен memory-agent'у для компрессии, иначе Generator падает)
 npm install -g @anthropic-ai/claude-code
 claude --version
+claude /login              # ВАЖНО: npm-CLI — отдельная учётка от Store-версии
 
 # 3. Установщик плагина
 npx -y claude-mem@latest install
@@ -320,9 +321,17 @@ Memory-agent (компонент, который сжимает наблюден
 ```powershell
 npm install -g @anthropic-ai/claude-code
 claude --version
+claude /login              # ОБЯЗАТЕЛЬНО — иначе Generator упрётся в "Not logged in"
 ```
 
 После этого следующий же запуск Generator-а подцепит `claude` из PATH и начнёт компрессировать. **Перезапуск Claude Code не нужен** — Generator проверяет PATH на каждый запуск.
+
+> ⚠ **Очень частая подстава**: после `npm install -g` команда `claude` появляется в PATH, но **не залогинена**. В логах появится новая ошибка вместо предыдущей:
+> ```
+> [SDK]    ← Response received (33 chars) ... Not logged in · Please run /login
+> [PARSER] SDK returned non-XML/empty response — ignoring queued batch
+> ```
+> Дело в том, что npm-CLI Claude Code и десктоп-Store-версия — **разные программы с отдельными логинами**. Команда `claude /login` откроет браузер, залогинься тем же аккаунтом — токен ляжет в keychain, и Generator подхватит.
 
 **Альтернатива** — указать абсолютный путь в `~/.claude-mem/settings.json`:
 
