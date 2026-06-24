@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"type":"group","id":"39e06707a7959b72","x":-475,"y":-100,"width":620,"height":400,"label":"Web"},
+		{"type":"group","id":"25a7a3a144eae0d9","x":-480,"y":340,"width":620,"height":220,"label":"EcmaScript (1997 )"},
+		{"type":"group","id":"adc2b55d10344365","x":-740,"y":940,"width":565,"height":220,"label":"Fullstack"},
+		{"type":"group","id":"fa7926fc452b20cd","x":-1140,"y":832,"width":340,"height":328,"label":"Web Page"},
+		{"type":"text","text":"Server","id":"2856e9a419145474","x":-295,"y":-40,"width":250,"height":60},
+		{"type":"text","text":"Computer 1","id":"24e689b98deff099","x":-455,"y":207,"width":250,"height":60},
+		{"type":"text","text":"Computer 2","id":"c8c5541d3f51900d","x":-135,"y":212,"width":250,"height":50},
+		{"type":"text","text":"LifeScript","id":"f111ec3e0666a1eb","x":-460,"y":380,"width":250,"height":60},
+		{"type":"text","text":"[[★_Работа/3__HTML/HTML]]","id":"8f85c25f3c81f5e2","x":-1100,"y":862,"width":250,"height":60,"color":"2"},
+		{"type":"text","text":"[[★_Работа/4__CSS/CSS]]","id":"ec936366dedf1df2","x":-1100,"y":960,"width":250,"height":60,"color":"#4271ff"},
+		{"type":"text","text":"[[★_Работа/_FRONTEND & BACKEND/2__JavaScript/JavaScript]]","id":"a75001e8fbb8bca9","x":-1100,"y":1054,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"Microsoft","id":"c19db8a99a3a1f65","x":-460,"y":480,"width":250,"height":60},
+		{"type":"text","text":"[[★_Работа/_FRONTEND & BACKEND/2__JavaScript/JavaScript]]","id":"bcf7613673d3d35a","x":-140,"y":380,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"EcmaScript ES6 (2015)","id":"a27e4576b075f258","x":0,"y":590,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"jQuery (2006)","id":"e2ab94141a64440b","x":-600,"y":590,"width":250,"height":60},
+		{"type":"text","text":"[[Node.js]] (2009)","id":"38dae847abddcd28","x":-300,"y":590,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"Web","id":"0f57e64264af1533","x":-725,"y":960,"width":250,"height":60,"color":"1"},
+		{"type":"text","text":"Frontend","id":"8fcf5fdfae9c35c1","x":-725,"y":1080,"width":250,"height":60},
+		{"type":"text","text":"Server","id":"c675d294d97413cc","x":-445,"y":960,"width":250,"height":60},
+		{"type":"text","text":"JavaScript 2023","id":"cd5b3f27e3a228e9","x":-300,"y":710,"width":250,"height":60,"color":"3"},
+		{"type":"text","text":"Backend(Node.js)","id":"20b9f2487a1e65f4","x":-445,"y":1080,"width":250,"height":60},
+		{"type":"text","text":"Mobile","id":"0d452394a2302531","x":-155,"y":960,"width":250,"height":60},
+		{"type":"text","text":"Desktop","id":"33a440bf92ed49d7","x":115,"y":960,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"4771747e5f6acedc","fromNode":"24e689b98deff099","fromSide":"top","toNode":"2856e9a419145474","toSide":"bottom","fromEnd":"arrow","label":"HTTP\nHTML CSS\n"},
+		{"id":"d3e92bebe405b476","fromNode":"c8c5541d3f51900d","fromSide":"top","toNode":"2856e9a419145474","toSide":"bottom","fromEnd":"arrow"},
+		{"id":"673c7529c0ccd068","fromNode":"f111ec3e0666a1eb","fromSide":"right","toNode":"bcf7613673d3d35a","toSide":"left"},
+		{"id":"28063f34ee6c631c","fromNode":"e2ab94141a64440b","fromSide":"bottom","toNode":"cd5b3f27e3a228e9","toSide":"left"},
+		{"id":"16a42c5353cef9b9","fromNode":"38dae847abddcd28","fromSide":"bottom","toNode":"cd5b3f27e3a228e9","toSide":"top"},
+		{"id":"97556bff8eb0ed19","fromNode":"a27e4576b075f258","fromSide":"bottom","toNode":"cd5b3f27e3a228e9","toSide":"right"},
+		{"id":"0dc3dfa45335c0d8","fromNode":"0f57e64264af1533","fromSide":"bottom","toNode":"8fcf5fdfae9c35c1","toSide":"top"},
+		{"id":"a3f909c70acb2da5","fromNode":"c675d294d97413cc","fromSide":"bottom","toNode":"20b9f2487a1e65f4","toSide":"top"},
+		{"id":"d61cf28e515c884f","fromNode":"cd5b3f27e3a228e9","fromSide":"bottom","toNode":"c675d294d97413cc","toSide":"top"},
+		{"id":"696f8cb31e9960ec","fromNode":"cd5b3f27e3a228e9","fromSide":"bottom","toNode":"0f57e64264af1533","toSide":"top"},
+		{"id":"22f94ed4870912f8","fromNode":"cd5b3f27e3a228e9","fromSide":"bottom","toNode":"0d452394a2302531","toSide":"top"},
+		{"id":"f9015152db96ab45","fromNode":"cd5b3f27e3a228e9","fromSide":"bottom","toNode":"33a440bf92ed49d7","toSide":"top"},
+		{"id":"384ab9a630114125","fromNode":"0f57e64264af1533","fromSide":"left","toNode":"fa7926fc452b20cd","toSide":"right"}
+	]
+}

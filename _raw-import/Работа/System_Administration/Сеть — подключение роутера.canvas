@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"bcc18b791517fa01","type":"text","text":"Ноут 192.168.3.222","x":436,"y":-320,"width":220,"height":63},
+		{"id":"842f188c88526137","type":"text","text":"TP-LINK WR720N 192.168.3.11","x":-60,"y":-320,"width":260,"height":100,"color":"4"},
+		{"id":"5a85739deb6c3286","x":320,"y":-140,"width":410,"height":100,"type":"text","text":"В нем жестко прописан свой 3.222 и подключение к 3.11 доступ у админке"},
+		{"id":"d352af9f26416edc","type":"text","text":"ПК 192.168.3.200","x":-40,"y":-132,"width":220,"height":63},
+		{"id":"d54995fc3d6702e9","x":-540,"y":-140,"width":256,"height":80,"color":"5","type":"text","text":"Honor  192.168.3.1\n14:DE:39:40:B0:**\n"},
+		{"id":"84c0023769445f32","type":"text","text":"11 канал 11BGN СМЕШАННЫЙ 20МГЦ Широковещание \nwpa wpa2\n- DHCP: ❌ выключен\n    \n- WDS: ✅ включён","x":-740,"y":-660,"width":364,"height":260}
+	],
+	"edges":[
+		{"id":"f1c70a3231bec0b9","fromNode":"d352af9f26416edc","fromSide":"left","toNode":"d54995fc3d6702e9","toSide":"right","fromEnd":"arrow","label":"rj45"},
+		{"id":"ce6928d2ae95a0fa","fromNode":"bcc18b791517fa01","fromSide":"left","toNode":"842f188c88526137","toSide":"right","fromEnd":"arrow","label":"rj45"},
+		{"id":"7bc738ae7e4d2705","fromNode":"5a85739deb6c3286","fromSide":"top","toNode":"bcc18b791517fa01","toSide":"bottom"},
+		{"id":"1dc188ffa2c61ee5","fromNode":"842f188c88526137","fromSide":"left","toNode":"d54995fc3d6702e9","toSide":"top","fromEnd":"arrow","color":"1","label":"wi-fi к 14-DE-39-40-B0-54"},
+		{"id":"d97fa67fb010045a","fromNode":"842f188c88526137","fromSide":"top","toNode":"84c0023769445f32","toSide":"right"},
+		{"id":"aac9e43924286a87","fromNode":"84c0023769445f32","fromSide":"bottom","toNode":"d54995fc3d6702e9","toSide":"left"}
+	]
+}
